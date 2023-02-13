@@ -12,3 +12,15 @@ public class Ex01_數字系統 {
     System.out.println(0.5D == 0.5F); // == 相等性比較,true(成立)
   } 
 }
+
+public class Ex02_變數 {  
+  public static void main(String args[]) { 
+    // 宣告變數 先寫資料類型(容量大小) 再取變數名稱
+    byte eng = 100; // byte 8-bit(位元)整數, 有效範圍 -128~127
+    byte math = 97;
+    System.out.println(eng);
+    System.out.println(math);
+    System.out.println(eng + math);
+    System.out.println((eng + math) / 2.0D); // 浮點數運算 必須出現福點數, 原則上乘除優先於加減, ()最優先
+  } 
+}
