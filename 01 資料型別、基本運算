@@ -1,0 +1,14 @@
+public class Ex01_數字系統 {  
+  public static void main(String args[]) { 
+    System.out.println(100); // int 32-bit
+    System.out.println(10000000000L); // long 64-bit
+    System.out.println(3.14F); // float 32-bit
+    System.out.println(1.2E200); // 1.2 x 10^200 (10的200次方)
+    System.out.println(1.23456789123456789123456789D); // D 代表 double (64-bit) D可省略不寫
+    System.out.println(1.23456789123456789123456789F); // F 代表 float (32-bit)
+    System.out.println(0.1D); // 64 bits double
+    System.out.println(0.1F); // 32 bits float
+    System.out.println(0.1D == 0.1F); // == 相等性比較,false(不成立)
+    System.out.println(0.5D == 0.5F); // == 相等性比較,true(成立)
+  } 
+}
