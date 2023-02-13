@@ -24,3 +24,12 @@ public class Ex02_變數 {
     System.out.println((eng + math) / 2.0D); // 浮點數運算 必須出現福點數, 原則上乘除優先於加減, ()最優先
   } 
 }
+
+public class Ex03_攝氏換算 {  
+  public static void main(String args[]) { 
+    int 攝氏 = 38;
+    float 華氏 = 攝氏*(9.0F/5)+32;
+    System.out.println("攝氏 = "+攝氏);
+    System.out.println("華氏 = "+華氏);
+  } 
+}
