@@ -47,3 +47,41 @@ public class Ex07_輸入文字轉整數 {  // 輸入文字,轉換int整數
     System.out.println(5.0F/3); // 浮點運算
   } 
 }
+
+// import 聲明要使用其他程式
+// javax.swing 是套件名稱(資料夾)
+// JOptionPane 是程式名稱(檔案)
+// showTnputDialog()是函數名稱, 提供資料輸入功能
+import javax.swing.JOptionPane;
+
+class Main {  // 輸入文字,轉換int整數
+  public static void main(String args[]) { 
+    // String 文字類型(子串)
+    String name;
+    name = JOptionPane.showInputDialog("請輸入名字"); 
+    // 輸入資料(以文字方式儲存)
+
+    String e文字;
+    e文字 = JOptionPane.showInputDialog("請輸入英文成績"); 
+    // 輸入資料(以文字方式儲存)
+
+    String m文字;
+    m文字 = JOptionPane.showInputDialog("請輸入數學成績"); 
+    // 輸入資料(以文字方式儲存)
+
+    // Integer.parseInt()函數能將String轉換成int
+    int e;
+    e = Integer.parseInt(e文字);
+
+    int m;
+    m = Integer.parseInt(e文字);
+
+
+
+    
+    System.out.println(5/3); // 整數運算 求商
+    System.out.println(5%3); // 整數運算 求餘數
+    System.out.println(5.0D/3); // 浮點運算
+    System.out.println(5.0F/3); // 浮點運算
+  } 
+}
