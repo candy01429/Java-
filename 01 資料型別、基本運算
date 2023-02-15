@@ -48,3 +48,21 @@ public class Ex04_BMI {
 }
 
 
+class Ex05_時間換算 {  
+  public static void main(String args[]) { 
+    int year = 1;
+    int days = year*365;
+    int hours = days*24;
+    
+    int minutes = hours*60;
+    int seconds = minutes*60;
+    long millions = seconds*1000L;
+
+    System.out.println(year + "年");
+    System.out.println(days + "天");
+    System.out.println(hours + "小時");
+    System.out.println(minutes + "分");
+    System.out.println(seconds + "秒");
+    System.out.println(millions + "毫秒");
+  } 
+}
