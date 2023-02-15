@@ -37,7 +37,7 @@ public class Ex03_攝氏換算 {
 public class Ex04_BMI {  
   public static void main(String args[]) { 
     double cm = 170;
-    double m = cm/100.0;
+    double m = cm/100.0; // 公分換算公尺
     double kg = 70;
     double bmi = kg/(m*m);
 
