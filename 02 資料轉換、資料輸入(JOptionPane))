@@ -1,1 +1,25 @@
-123
+public class Ex06_轉換資料 {  // 轉換資料(在運算時改變資料型態)
+  public static void main(String args[]) { 
+    // 整數運算預設採用int(32-bit)
+    byte a =100;
+    byte b = 50;
+    int c = (int)a + (int)b // 32-bit運算(整數運算 潛規則)
+    System.out.println(c);
+
+    b = 20;
+    byte d = (byte)(a+b); // 32-bit 運算結果 轉換 byte 8-bit(讀取32位元中的8位元資料)
+    System.out.println(d);
+
+    b = 30;
+    d = (byte)(a+b); // 若 a + b 結果超過127, 轉換成byte資料會失真
+    System.out.println(d);
+
+    // float 32-bit 轉 int 32-bit
+    float f;
+    int i;
+
+    // f = 3.14; 
+    // 編譯失敗, 3.14是double
+    f = 3.14F;
+    i = (int)f;
+    System.out.println(i);
