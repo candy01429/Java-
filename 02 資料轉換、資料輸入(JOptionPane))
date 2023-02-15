@@ -23,3 +23,11 @@ public class Ex06_轉換資料 {  // 轉換資料(在運算時改變資料型態
     f = 3.14F;
     i = (int)f;
     System.out.println(i);
+
+    System.out.println("-------------------------");
+    System.out.println(5/3); // 整數運算 求商
+    System.out.println(5%3); // 整數運算 求餘數
+    System.out.println(5.0D/3); // 浮點運算
+    System.out.println(5.0F/3); // 浮點運算
+  } 
+}
