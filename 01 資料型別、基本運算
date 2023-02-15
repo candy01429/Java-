@@ -33,3 +33,18 @@ public class Ex03_攝氏換算 {
     System.out.println("華氏 = "+華氏);
   } 
 }
+
+public class Ex04_BMI {  
+  public static void main(String args[]) { 
+    double cm = 170;
+    double m = cm/100.0;
+    double kg = 70;
+    double bmi = kg/(m*m);
+
+    System.out.println("身高：" + cm);
+    System.out.println("體重：" + kg);
+    System.out.println("BMI = " + bmi);
+  } 
+}
+
+
