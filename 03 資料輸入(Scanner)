@@ -1,0 +1,28 @@
+import java.util.Scanner; // 聲明要使用Scanner
+public class Ex10_掃描器輸入資料 {  
+  public static void main(String args[]) { 
+    String name;
+    int eng;
+    int math;
+
+    // Scanner
+    // System.in
+    // new
+    // 宣告掃描器變數sc, 掃描器的資料來源, 編碼採用Big5(Windows輸入中文採用的編碼)
+    Scanner sc = new Scanner(System.in,"UTF-8"); // Mac 採用UTF-8編碼
+
+    System.out.println("請輸入名字");
+    name = sc.next(); //等待從鍵盤讀取String
+
+    System.out.println("請輸入英文成績");
+    eng = sc.nextInt(); //等待從鍵盤讀取int
+    
+    System.out.println("請輸入數學成績");
+    math = sc.nextInt(); //等待從鍵盤讀取int
+    
+    System.out.println("名字 = " + name); 
+    System.out.println("英文成績 = " + eng);
+    System.out.println("數學成績 = " + math);
+  } 
+}
+------------------------------------------------------------------------------------------------
