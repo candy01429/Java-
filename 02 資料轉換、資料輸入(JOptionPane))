@@ -36,29 +36,15 @@ public class Ex06_轉換資料 {  // 轉換資料(在運算時改變資料型態
 // javax.swing 是套件名稱(資料夾)
 // JOptionPane 是程式名稱(檔案)
 // showTnputDialog()是函數名稱, 提供資料輸入功能
+
 import javax.swing.JOptionPane;
 
 public class Ex07_輸入文字轉整數 {  // 輸入文字,轉換int整數
   public static void main(String args[]) { 
-   
-    System.out.println(5/3); // 整數運算 求商
-    System.out.println(5%3); // 整數運算 求餘數
-    System.out.println(5.0D/3); // 浮點運算
-    System.out.println(5.0F/3); // 浮點運算
-  } 
-}
-
-// import 聲明要使用其他程式
-// javax.swing 是套件名稱(資料夾)
-// JOptionPane 是程式名稱(檔案)
-// showTnputDialog()是函數名稱, 提供資料輸入功能
-import javax.swing.JOptionPane;
-
-class Main {  // 輸入文字,轉換int整數
-  public static void main(String args[]) { 
-    // String 文字類型(子串)
-    String name;
-    name = JOptionPane.showInputDialog("請輸入名字"); 
+  
+    // String 文字類型(字串)
+    String Ename;
+    Ename = JOptionPane.showInputDialog("請輸入名字"); 
     // 輸入資料(以文字方式儲存)
 
     String e文字;
@@ -74,14 +60,15 @@ class Main {  // 輸入文字,轉換int整數
     e = Integer.parseInt(e文字);
 
     int m;
-    m = Integer.parseInt(e文字);
+    m = Integer.parseInt(m文字);
 
+    int t;
+    t = e+m;
 
+    System.out.println(Ename);
+    System.out.println("英文: "+e);
+    System.out.println("數學: "+m);
+    System.out.println("總分: "+t);
 
-    
-    System.out.println(5/3); // 整數運算 求商
-    System.out.println(5%3); // 整數運算 求餘數
-    System.out.println(5.0D/3); // 浮點運算
-    System.out.println(5.0F/3); // 浮點運算
   } 
 }
