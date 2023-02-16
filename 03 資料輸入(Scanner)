@@ -1,5 +1,5 @@
 import java.util.Scanner; // 聲明要使用Scanner
-public class Ex10_掃描器輸入資料 {  
+public class Ex10_掃描器輸入資料_1 {  
   public static void main(String args[]) { 
     String name;
     int eng;
@@ -26,3 +26,27 @@ public class Ex10_掃描器輸入資料 {
   } 
 }
 ------------------------------------------------------------------------------------------------
+import java.util.Scanner; // 聲明要使用Scanner
+public class Ex10_掃描器輸入資料_2 {  
+  public static void main(String args[]) { 
+    double cm;
+    double m;
+    double kg;
+    double bmi;
+
+    Scanner sc = new Scanner(System.in,"UTF-8");
+
+    System.out.println("請輸入身高 :"); 
+    cm = sc.nextDouble();
+
+    System.out.println("請輸入體重 :"); 
+    kg = sc.nextDouble();
+
+    m = cm / 100;
+    bmi = kg/(m*m);
+    
+    System.out.println("身高：" + cm); 
+    System.out.println("體重：" + kg);
+    System.out.println("BMI：" + bmi);
+  } 
+}
