@@ -1,1 +1,13 @@
-123
+import java.util.Scanner; // 聲明要使用Scanner
+class Main {  
+  public static void main(String args[]) { 
+    /*顯示目前所在樓層*/
+    int floor =1; // 目前電梯所在樓層
+    // 輸出訊息
+    System.out.println("目前電梯在 " + floor + "樓"); 
+    
+    /*顯示選單*/
+    System.out.println("----------------------------------- ");
+    System.out.println("BMI：" + bmi);
+  } 
+}
