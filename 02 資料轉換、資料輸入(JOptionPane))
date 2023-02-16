@@ -103,3 +103,22 @@ public class Ex08_輸入文字轉浮點數 {  // 輸入文字 , 轉double浮點�
 
   } 
 }
+-------------------------------------------------------------------------------------------------
+import javax.swing.JOptionPane;
+
+public class Ex09_輸入攝氏換算華氏 {  // 輸入攝氏換算華氏
+  public static void main(String args[]) { 
+     
+    String 攝氏文字 = JOptionPane.showInputDialog("請輸入攝氏");  
+    // 視窗輸入
+    double 攝氏 = Double.parseDouble(攝氏文字);
+    double 華氏 = 攝氏 * (9.0/5.0) + 32.0;
+
+    // \n 換行符號
+    String result = "攝氏" + 攝氏 + "度" + "\n" + "華氏" + 華氏 + "度";
+    System.out.println(result);
+
+    JOptionPane.showInputDialog(null,result);
+    // 視窗顯示訊息, null表示此訊息視窗不存在於其他視窗中
+  } 
+}
