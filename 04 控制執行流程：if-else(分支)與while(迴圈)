@@ -5,6 +5,12 @@ class Main {
     int floor =1; // 目前電梯所在樓層
     // 輸出訊息
     System.out.println("目前電梯在 " + floor + "樓"); 
+
+    System.out.println("--------------------------"); 
+    System.out.println("1.向上");
+    System.out.println("2.向下")
+
+
     
     /*顯示選單*/
     System.out.println("----------------------------------- ");
