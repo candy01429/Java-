@@ -5,3 +5,4 @@ public class Ex12_BMI{
     while (true){
       System.out.print("輸入身高(cm): ");
       float cm = sc.nextFloat(); // 輸入浮點數
+      System.out.println
