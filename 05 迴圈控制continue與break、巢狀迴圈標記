@@ -31,3 +31,86 @@ public class Ex12_BMI{
     System.out.println("結束程式");
   }
 }
+----------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class Ex13_輸入攝氏換算華氏{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in,"UTF-8"); // 宣告掃描器變數 sc , 掃描器的資料來源為鍵盤
+
+    標記1:while (true){
+      System.out.print("輸入攝氏: ");
+      float c = sc.nextFloat();
+
+      System.out.println("你輸入的攝氏是 " + c);
+      float f = c * (9F / 5F) + 32;
+
+      System.out.println("-------------------");
+      System.out.println("華氏 = " + f);
+      System.out.println("-------------------");
+
+      int menu;
+
+      標記2:while (true){
+
+        System.out.print("是否繼續 (1.是 2.否)");
+        menu = sc.nextInt(); // 輸入整數 放到menu變數
+
+        if(menu == 1){
+          break 標記2; // 跳出標記2迴圈
+        } else if (menu == 2){
+          break 標記1; // 跳出標記1迴圈
+        }
+        System.out.println("不要亂打");
+      }
+      System.out.println("再執行一次");
+    }
+    System.out.println("-------------------");
+    System.out.println("結束程式");
+  }
+}
+----------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class Ex14_MOD{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in); // 宣告掃描器變數 sc , 掃描器的資料來源為鍵盤
+
+    標記1:while (true){ // 循環起點
+      System.out.print("1.家庭好康餐\n2.家庭超值餐\3.家庭豪華餐\n> ");
+      int menu = sc.nextInt();
+
+      System.out.println("你輸入的攝氏是 " + c);
+      float f = c * (9F / 5F) + 32;
+
+      System.out.println("-------------------");
+      System.out.println("華氏 = " + f);
+      System.out.println("-------------------");
+
+      int menu;
+
+      標記2:while (true){
+
+        System.out.print("是否繼續 (1.是 2.否)");
+        menu = sc.nextInt(); // 輸入整數 放到menu變數
+
+        if(menu == 1){
+          break 標記2; // 跳出標記2迴圈
+        } else if (menu == 2){
+          break 標記1; // 跳出標記1迴圈
+        }
+        System.out.println("不要亂打");
+      }
+      System.out.println("再執行一次");
+    }
+    System.out.println("-------------------");
+    System.out.println("結束程式");
+  }
+}
+
+
+
+
+
+
+
+
+
