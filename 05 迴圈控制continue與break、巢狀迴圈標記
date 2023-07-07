@@ -5,4 +5,29 @@ public class Ex12_BMI{
     while (true){
       System.out.print("輸入身高(cm): ");
       float cm = sc.nextFloat(); // 輸入浮點數
-      System.out.println
+      System.out.println("你輸入的身高是 "+cm);
+
+      System.out.print("輸入體重(kg): ");
+      float kg = sc.nextFloat(); // 輸入浮點數
+      System.out.println("你輸入的體重是 "+kg);
+
+      float m = cm / 100.0f;
+      float bmi = kg / (m * m);
+
+      System.out.println("-------------------");
+      System.out.println("BMI = " + bmi);
+      System.out.println("-------------------");
+
+      System.out.print("是否繼續 (1.是 2.否)");
+      int menu = sc.nextInt();
+      if (menu == 1){
+          System.out.println("再執行一次");
+      } else if (menu == 2){
+          break;
+      }
+    } // end of while
+    // break 跳到這裡
+    System.out.println("-------------------");
+    System.out.println("結束程式");
+  }
+}
