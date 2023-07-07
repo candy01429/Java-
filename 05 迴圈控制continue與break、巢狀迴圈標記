@@ -1,0 +1,7 @@
+import java.util.Scanner;
+public class Ex12_BMI{
+  public static void main(String[] arg){
+    Scanner sc = new Scanner(System.in,"UTF-8"); // 宣告掃描器變數 sc , 掃描器的資料來源為鍵盤
+    while (true){
+      System.out.print("輸入身高(cm): ");
+      float cm = sc.nextFloat(); // 輸入浮點數
