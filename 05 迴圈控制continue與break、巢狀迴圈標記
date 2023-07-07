@@ -78,8 +78,24 @@ public class Ex14_MOD{
       System.out.print("1.家庭好康餐\n2.家庭超值餐\3.家庭豪華餐\n> ");
       int menu = sc.nextInt();
 
-      System.out.println("你輸入的攝氏是 " + c);
-      float f = c * (9F / 5F) + 32;
+      String s = "您可以觀賞的頻道是\n"; // String 字串類型
+      if (menu == 1){                  // == 判斷是否相等
+        s += "台視\n中視\n華視";        // += 累加 \n 換行
+      } else if (menu == 2){
+        s += "台視\n中視\n華視\nELTA 影劇台\nELTA 戲劇台\nELTA 綜合台";
+      } else if (menu == 2){
+
+
+
+
+
+
+
+
+
+
+
+
 
       System.out.println("-------------------");
       System.out.println("華氏 = " + f);
