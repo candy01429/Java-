@@ -116,3 +116,25 @@ public class Ex16_日期_switch{
     System.out.println("您的生日是 "+ month + " 月 " + date + " 日");
   }
 }
+---------------------------------------------------------------------------------------------------
+/*閏年
+  只要滿足下面其中一個條件, 就是閏年
+  1.西元年分除以400可整除, 為閏年
+  2.西元年分除以4可整除但除以100不可整除, 為閏年
+*/
+import java.util.Scanner;
+public class Ex17_閏年{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int month; // 月
+    int date;  // 日
+
+    System.out.println("請輸入生日");
+
+    do { // 先執行一次
+      System.out.print("月: ");
+      month = sc.nextInt();
+      if (month < 1 || month > 12){
+        System.out.println("錯誤的月份");
+      }
+    } while(month < 1 || month > 12); // 條件成立則循環
