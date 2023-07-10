@@ -1,3 +1,4 @@
+/*BMI*/
 import java.util.Scanner;
 public class Ex12_BMI{
   public static void main(String[] arg){
@@ -32,6 +33,7 @@ public class Ex12_BMI{
   }
 }
 ----------------------------------------------------------------------------------------------
+/*輸入攝氏, 換算華氏*/
 import java.util.Scanner;
 public class Ex13_輸入攝氏換算華氏{
   public static void main(String[] args){
@@ -69,6 +71,7 @@ public class Ex13_輸入攝氏換算華氏{
   }
 }
 ----------------------------------------------------------------------------------------------
+/*MOD_寫法1*/
 import java.util.Scanner;
 public class Ex14_MOD{
   public static void main(String[] args){
@@ -109,6 +112,7 @@ public class Ex14_MOD{
   }
 }
 ----------------------------------------------------------------------------------------------
+/*MOD_寫法2*/
 import java.util.Scanner;
 public class Ex15_MOD2{
   public static void main(String[] args){
