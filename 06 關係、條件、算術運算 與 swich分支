@@ -102,3 +102,17 @@ public class Ex16_日期_switch{
             break;    // 跳離 switch 範圍
 
         default: // 以上皆非(相當於 else 用法)
+            max = 28; // 暫不考慮閏月
+            break;    // 跳離 switch 範圍
+      }
+      do { // 先執行一次
+      System.out.print("日: ");
+      month = sc.nextInt();
+      if (date < 1 || date > max){
+        System.out.println("錯誤: " + month + " 月天數為 1 ~ " + max + " 天");
+      }
+    } while(date < 1 || date > max); // 條件成立則循環
+
+    System.out.println("您的生日是 "+ month + " 月 " + date + " 日");
+  }
+}
