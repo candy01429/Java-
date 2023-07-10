@@ -61,3 +61,44 @@ public class Ex16_日期{
     System.out.println("您的生日是 " + month + " 月 " + days + " 日");
   }
 }
+---------------------------------------------------------------------------------------------------
+/*用 switch 改寫 if-else if*/
+import java.util.Scanner;
+public class Ex16_日期_switch{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int month; // 月
+    int date;  // 日
+
+    System.out.println("請輸入生日");
+
+    do { // 先執行一次
+      System.out.print("月: ");
+      month = sc.nextInt();
+      if (month < 1 || month > 12){
+        System.out.println("錯誤的月份");
+      }
+    } while(month < 1 || month > 12); // 條件成立則循環
+
+    int max; // 天數最大值
+
+    // switch 處理速度比 多個else if更快
+    // 但只能用在 == 判斷, 多個case效果與||相同
+    switch (month){
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            max = 31;
+            break;    // 跳離 switch 範圍
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            max = 30;
+            break;    // 跳離 switch 範圍
+
+        default: // 以上皆非(相當於 else 用法)
