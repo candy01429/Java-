@@ -126,8 +126,9 @@ import java.util.Scanner;
 public class Ex17_閏年{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
-    int month; // 月
-    int date;  // 日
+    int year;
+
+    while(true)
 
     System.out.println("請輸入生日");
 
