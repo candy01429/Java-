@@ -1,21 +1,27 @@
 import java.util.Scanner; // 聲明要使用Scanner
 class Main {  
   public static void main(String args[]) { 
+
     /*step 1 顯示目前所在樓層*/
+
     int floor =1; // 目前電梯所在樓層
     // 輸出訊息
     System.out.println("目前電梯在 " + floor + "樓"); 
     System.out.println("--------------------------");
 
     /*step 5 使用 while 讓程式循環*/
+
     While(true){ // while 迴圈 循環起點
+
       /*step 2 顯示選單*/
+
       System.out.println("1.向上");
       System.out.println("2.向下");
       System.out.println("3.結束")
       System.out.println("> ");
 
     /*step 3 使用Scanner輸入資料*/
+
     Scanner sc = new Scanner(System.in,"UTF-8");
     // 整數 menu 儲存鍵盤輸入的值
     int menu = sc.nextInt(); // nextInt() 掃描器從鍵盤讀取整數(會等待使用者輸入資料)
@@ -24,6 +30,7 @@ class Main {
     System.out.println("-----------------------");
 
     /*step 4 使用if條件判斷*/
+
     if (menu == 1){ // 如果 menu 等於1
         floor += 1; // floor 加 1
     } else if (menu == 2){ // 否則 如果 menu 等於 2
