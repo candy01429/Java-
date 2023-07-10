@@ -83,50 +83,70 @@ public class Ex14_MOD{
         s += "台視\n中視\n華視";        // += 累加 \n 換行
       } else if (menu == 2){
         s += "台視\n中視\n華視\nELTA 影劇台\nELTA 戲劇台\nELTA 綜合台";
-      } else if (menu == 2){
-
-
-
-
-
-
-
-
-
-
-
-
-
-      System.out.println("-------------------");
-      System.out.println("華氏 = " + f);
-      System.out.println("-------------------");
-
-      int menu;
-
-      標記2:while (true){
-
-        System.out.print("是否繼續 (1.是 2.否)");
-        menu = sc.nextInt(); // 輸入整數 放到menu變數
-
-        if(menu == 1){
-          break 標記2; // 跳出標記2迴圈
-        } else if (menu == 2){
-          break 標記1; // 跳出標記1迴圈
-        }
-        System.out.println("不要亂打");
+      } else if (menu == 3){
+        s += "台視\n中視\n華視\nELTA 影劇台\nELTA 戲劇台\nELTA 綜合台";
+        s += "Star Movies HD\n福斯家庭電影台\nBBC Channel";
+      } else {
+        s = "錯誤的選項";
       }
-      System.out.println("再執行一次");
-    }
+      System.out.println(s);
+      System.out.println("-------------------");
+
+      while (true){
+        System.out.print("是否繼續 (1.是 2.否)");
+        int menu2 = sc.nextInt(); // 輸入整數 放到menu2變數
+        if(menu2 == 1){
+           System.out.println("再執行一次");
+           continue 標記1;
+        }
+        if(menu2 == 2){
+           break 標記1;
+        }
+      }
+    } // while 循環終點
     System.out.println("-------------------");
     System.out.println("結束程式");
   }
 }
+----------------------------------------------------------------------------------------------
+import java.util.Scanner;
+public class Ex15_MOD2{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in); // 宣告掃描器變數 sc , 掃描器的資料來源為鍵盤
 
+    標記1:while (true){ // 循環起點
+      System.out.print("1.家庭好康餐\n2.家庭超值餐\3.家庭豪華餐\n> ");
+      int menu = sc.nextInt();
 
+      String s = "您可以觀賞的頻道是\n"; // String 字串類型
+      if (menu >= 1){                  // == 判斷是否相等
+        s += "台視\n中視\n華視";        // += 累加 \n 換行
+      } 
+      if (menu >= 2){
+        s += "ELTA 影劇台\nELTA 戲劇台\nELTA 綜合台";
+      }
+      if (menu >= 3){
+        s += "Star Movies HD\n福斯家庭電影台\nBBC Channel";
+      }
+      if (menu < 1 || menu > 3) // ||代表或者
+        s = "錯誤的選項";
+      }
+      System.out.println(s);
+      System.out.println("-------------------");
 
-
-
-
-
-
-
+      while (true){
+        System.out.print("是否繼續 (1.是 2.否)");
+        int menu2 = sc.nextInt(); // 輸入整數 放到menu2變數
+        if(menu2 == 1){
+           System.out.println("再執行一次");
+           continue 標記1;
+        }
+        if(menu2 == 2){
+           break 標記1;
+        }
+      }
+    } // while 循環終點
+    System.out.println("-------------------");
+    System.out.println("結束程式");
+  }
+}
