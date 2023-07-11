@@ -1,3 +1,4 @@
+/*for 迴圈(簡化 while 寫法)*/
 public class Ex19_for迴圈{
   public static void main(String[] args){
     int a = 1;
@@ -9,5 +10,18 @@ public class Ex19_for迴圈{
     for (int i = 0; i < 10; i++){
         System.out.println("次數 = " + i);
     }
+  }
+}
+--------------------------------------------------------------------------------------------------
+public class Ex20_巢狀迴圈{
+  public static void main(String[] args){
+      // 循環 5 次
+      for (int y = 1; y <= 5; y++){
+          // 循環 10 次
+          for (int x = 1; x <= 10; x++){
+              System.out.print("o "); // 不換行
+          }
+          System.out.println(); // 換行
+      }
   }
 }
