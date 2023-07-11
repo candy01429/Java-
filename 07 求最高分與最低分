@@ -1,1 +1,20 @@
+/*求最高分、最低分*/
+import java.util.Scanner;
+public class Ex18_最高分與最低分{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int score; // 分數
+    int max = 0; // 最高分
+    int min = 0; // 最低分
 
+    while(true){ // 無窮迴圈(永遠成立)
+        System.out.print("輸入 成績 (-1結束): ");
+        score = sc.nextInt();
+        if(score == -1) break;  // 跳離迴圈
+        /*處理輸入-1跳離迴圈,計算最大值*/
+        if(score > max) max = score // 如果輸入的成績 > 最高分 , 則最高分更新為目前所輸入的成績
+        // 如果輸入的成績 < 最低分 , 則最低分更新為目前所輸入的成績
+    }
+
+    System.out.print("最高分 = " + max);
+    System.out.print("最低分 = " + min);
