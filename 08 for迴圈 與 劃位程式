@@ -25,3 +25,39 @@ public class Ex20_巢狀迴圈{
       }
   }
 }
+--------------------------------------------------------------------------------------------------
+/*劃位：在 y = 0 與 x = 0 的位置顯示 x*/
+public class Ex20_巢狀迴圈{
+  public static void main(String[] args){
+      for (int y = 0; y < 10; y++){
+          for (int x = 0; x < 10; x++){
+              // print() 不換行
+              // && 而且(前後條件皆成立)
+              if(x == 0 && y == 0)
+                System.out.print("x ");
+              else
+                System.out.print("o ");
+          }
+          System.out.println(); // 換行
+      }
+  }
+}
+--------------------------------------------------------------------------------------------------
+/*用變數表示劃位的位置*/
+public class Ex20_巢狀迴圈{
+  public static void main(String[] args){
+      int myX = 0;
+      int myY = 0;
+      for (int y = 0; y < 10; y++){
+          for (int x = 0; x < 10; x++){
+              // print() 不換行
+              // && 而且(前後條件皆成立)
+              if(x == myX && y == myY)
+                System.out.print("x ");
+              else
+                System.out.print("o ");
+          }
+          System.out.println(); // 換行
+      }
+  }
+}
