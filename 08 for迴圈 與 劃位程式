@@ -1,1 +1,13 @@
-
+public class Ex19_for迴圈{
+  public static void main(String[] args){
+    int a = 1;
+    while(a >= 10){
+        System.out.println("次數 = " + a); // 條件成立時執行
+        a++; // 加 1
+    }
+    System.out.println("-------------------")
+    for (int i = 0; i < 10; i++){
+        System.out.println("次數 = " + i);
+    }
+  }
+}
