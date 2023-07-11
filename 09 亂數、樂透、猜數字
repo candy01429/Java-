@@ -1,1 +1,35 @@
 /*亂數*/
+public class Ex22_亂數{
+  public static void main(String[] args){
+      // 0.0 <= Math.random() < 1.0
+      double r = Math.random(); // 產生介於 0 ~ 1 之間浮點數
+      System.out.println(r);
+  }
+}
+---------------------------------------------------------------------------------------------------
+public class Ex22_亂數{
+  public static void main(String[] args){
+      // 0.0 <= Math.random() < 1.0
+      double r = 0;
+      while (r < 0.9){ // 循環條件 r < 0.9
+          r = Math.random(); // 產生介於 0 ~ 1 之間浮點數
+          System.out.println(r);
+      }
+  }
+}
+---------------------------------------------------------------------------------------------------
+public class Ex22_亂數{
+  public static void main(String[] args){
+      // 0.0 <= Math.random() < 1.0
+      double r = 0;
+      int i = 1; // 紀錄循環次數
+      while (i <= 5){ // 還沒到 5 次就循環
+          System.out.println("i = " + i);
+          r = Math.random(); // 產生介於 0 ~ 1 之間浮點數
+          System.out.println(r);
+          i++; //加1 , 簡化 i += 1 寫法
+      }
+      System.out.println("-----------------");
+      System.out.println("i = " + i);
+  }
+}
