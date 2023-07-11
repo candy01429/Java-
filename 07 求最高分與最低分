@@ -15,6 +15,7 @@ public class Ex18_最高分與最低分{
         if(score > max) max = score // 如果輸入的成績 > 最高分 , 則最高分更新為目前所輸入的成績
         // 如果輸入的成績 < 最低分 , 則最低分更新為目前所輸入的成績
     }
-
     System.out.print("最高分 = " + max);
     System.out.print("最低分 = " + min);
+  }
+}
