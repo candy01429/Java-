@@ -128,14 +128,22 @@ public class Ex17_閏年{
     Scanner sc = new Scanner(System.in);
     int year;
 
-    while(true)
-
-    System.out.println("請輸入生日");
-
-    do { // 先執行一次
-      System.out.print("月: ");
-      month = sc.nextInt();
-      if (month < 1 || month > 12){
-        System.out.println("錯誤的月份");
-      }
-    } while(month < 1 || month > 12); // 條件成立則循環
+    while(true){
+        System.out.println("輸入 year (0結束): ");
+        year = sc.nextInt();
+        if(year == 0) break; // 跳出迴圈
+        if(year % 4 == 0){   // year 除以 4 的餘數是否為 0
+            System.out.println(year + " 是 4 的倍數");
+        }
+        if(year % 4 == 0 && year % 100 != 0){ // year 除以 4 的餘數為 0 且 year 除以 100 的餘數不為 0
+            System.out.println(year + " 是 4 的倍數 但不是 100 的倍數");
+        }
+        if(year % 400 == 0){
+            System.out.println(year + " 是 400 的倍數");
+        }
+        if(((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
+            System.out.println("是閏年");
+        }
+    }
+  }
+}
