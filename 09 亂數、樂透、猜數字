@@ -33,3 +33,23 @@ public class Ex22_亂數{
       System.out.println("i = " + i);
   }
 }
+---------------------------------------------------------------------------------------------------
+/*產生整數亂數*/
+public class Ex22_亂數{
+  public static void main(String[] args){
+      // 0.0 <= Math.random() < 1.0
+      double r = 0;
+      int i = 1; // 紀錄循環次數
+      int n;     // 亂數 轉 整數
+      while (i <= 5){ // 還沒到 5 次就循環
+          System.out.println("i = " + i);
+          r = Math.random(); // 產生介於 0 ~ 1 之間浮點數
+          System.out.println(r);
+          n = (int)(r * 10); // 產生介於 0 ~ 1 之間整數
+          System.out.println(n);
+          System.out.println("-----------------");
+          i++; // 加1次, 簡化 i += 1 寫法
+      }
+      System.out.println("i = " + i);
+  }
+}
