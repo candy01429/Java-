@@ -61,3 +61,36 @@ public class Ex20_巢狀迴圈{
       }
   }
 }
+--------------------------------------------------------------------------------------------------
+/*使用 Scanner 輸入 myX 與 myY
+  條件運算子 ? :
+  可簡化前面範例 if else 寫法
+  加入迴圈判斷是否繼續*/
+public class Ex21_條件運算{
+  public static void main(String[] args){
+      int myX = 0;
+      int myY = 0;
+
+      Scanner sc = new Scanner(System.in);
+      System.out.print("請輸入 myX: ");
+      myX = sc.nextInt();
+
+      System.out.print("請輸入 myY: ");
+      myY = sc.nextInt();
+
+      for (int y = 0; y < 10; y++){
+          for (int x = 0; x < 10; x++){
+              // print() 不換行
+              // && 而且(前後條件皆成立)
+              // 條件運算：結果值二選一
+              // 條件式? 成立時的結果值：不成立時的結果值
+              System.out.print(x == myX && y == myY) ? "x ":"o ");
+          }
+          System.out.println(); // 換行
+      }
+  }
+}
+
+
+
+
