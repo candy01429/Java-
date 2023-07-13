@@ -101,3 +101,39 @@ public class Ex24_產生不重複號碼{
       System.out.println(n3);
   }
 }
+---------------------------------------------------------------------------------------------------
+/*自我挑戰：完成6個不重複*/
+public class Ex24_產生不重複號碼{
+  public static void main(String[] args){
+      // 可在同一行宣告多個變數
+      int n1, n2 ,n3, n4, n5 ,n6;
+
+      n1 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      System.out.println(n1);
+
+      do {
+          n2 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      } while(n2 == n1)
+      System.out.println(n2);
+
+      do {
+          n3 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      } while(n3 == n1 || n3 == n2)
+      System.out.println(n3);
+
+      do {
+          n4 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      } while(n4 == n1 || n4 == n2 || n4 == n3)
+      System.out.println(n4);
+
+      do {
+          n5 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      } while(n5 == n1 || n5 == n2 || n5 == n3 || n5 == n4)
+      System.out.println(n5);
+
+      do {
+          n6 = (int)(Math.random()*42) + 1; // 產生介於 1 ~ 42 之間整數
+      } while(n6 == n1 || n6 == n2 || n6 == n3 || n6 == n4 || n6 == n5)
+      System.out.println(n6);
+  }
+}
