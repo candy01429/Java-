@@ -69,3 +69,26 @@ public class Ex23_樂透{
   }
 }
 ---------------------------------------------------------------------------------------------------
+/*用for迴圈改寫樂透*/
+public class Ex23_樂透{
+  public static void main(String[] args){
+      for(int n, i = 1 ; i <= 6 ; i++) // 還沒到 6 次就循環
+          System.out.println("第 " + i + " 號碼");
+          // 0.0 <= Math.random() < 1.0
+          n = (int)(Math.random()*42) +1; // 產生介於 1 ~ 42 之間整數
+          System.out.println(n);
+      }
+  }
+}
+---------------------------------------------------------------------------------------------------
+/*產生不重複號碼*/
+public class Ex23_樂透{
+  public static void main(String[] args){
+      for(int n, i = 1 ; i <= 6 ; i++) // 還沒到 6 次就循環
+          System.out.println("第 " + i + " 號碼");
+          // 0.0 <= Math.random() < 1.0
+          n = (int)(Math.random()*42) +1; // 產生介於 1 ~ 42 之間整數
+          System.out.println(n);
+      }
+  }
+}
