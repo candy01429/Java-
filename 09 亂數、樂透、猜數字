@@ -45,7 +45,7 @@ public class Ex22_亂數{
           System.out.println("i = " + i);
           r = Math.random(); // 產生介於 0 ~ 1 之間浮點數
           System.out.println(r);
-          n = (int)(r * 10); // 產生介於 0 ~ 1 之間整數
+          n = (int)(r * 10); // 產生介於 1 ~ 10 之間整數
           System.out.println(n);
           System.out.println("-----------------");
           i++; // 加1次, 簡化 i += 1 寫法
